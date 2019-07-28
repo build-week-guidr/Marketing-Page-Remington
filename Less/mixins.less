@@ -1,0 +1,32 @@
+.findMe(){
+    border: 1px solid red;
+}
+
+.center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.btnmaker(@height, @width, @color, @text, @size, @px, @type, @border, @radius, @weight){
+    .center();
+    cursor: pointer;
+    height: @height;
+    width: @width;
+    background-color: @color;
+    color: @text;
+    font-size: @size;
+    border: @px @type @border;
+    border-radius: @radius;
+    font-weight: @weight;
+}
+
+.darker(@color, @percent){
+    background-color: darken(@color, @percent);
+}   
