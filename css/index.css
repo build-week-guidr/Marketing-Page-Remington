@@ -163,19 +163,19 @@ html {
   padding: 0 0 0 3rem;
 }
 .cpyrt {
+  display: flex;
+  justify-content: center;
+  align-self: center;
   color: #2d86ae;
   text-shadow: 1px 1px 0 #002341;
   font-size: 2rem;
   border: 2px solid pink;
   bottom: 10px;
-  position: absolute;
+  right: 50%;
+  position: fixed;
 }
 .backImg {
-  height: 100vh;
-  width: 100vw;
   position: relative;
-}
-.backImg::before {
   background-image: url("/img/Anchorage-Chugach-State-Park-Topo-Map.jpg");
   background-size: cover;
   position: absolute;
@@ -186,7 +186,6 @@ html {
   height: 100vh;
   width: 100vw;
   z-index: -3;
-  opacity: 0.8;
 }
 .content {
   width: 95%;
@@ -206,6 +205,7 @@ html {
 .content::before {
   border-top-left-radius: 17rem;
   border-bottom-left-radius: 17rem;
+  background-image: linear-gradient(transparent, white);
   background-size: cover;
   position: absolute;
   content: "";
