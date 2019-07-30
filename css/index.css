@@ -139,9 +139,6 @@ body {
 html {
   font-size: 62.5%;
 }
-body {
-  background-image: url("/img/Anchorage-Chugach-State-Park-Topo-Map.jpg");
-}
 .headBox {
   display: flex;
   justify-content: space-between;
@@ -165,6 +162,32 @@ body {
   width: 20%;
   padding: 0 0 0 3rem;
 }
+.cpyrt {
+  color: #2d86ae;
+  text-shadow: 1px 1px 0 #002341;
+  font-size: 2rem;
+  border: 2px solid pink;
+  bottom: 10px;
+  position: absolute;
+}
+.backImg {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.backImg::before {
+  background-image: url("/img/Anchorage-Chugach-State-Park-Topo-Map.jpg");
+  background-size: cover;
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -3;
+  opacity: 0.8;
+}
 .content {
   width: 95%;
   float: right;
@@ -173,13 +196,43 @@ body {
   border-top: 0.2rem solid #d4593d;
   border-left: 0.2rem solid #d4593d;
   border-bottom: 0.2rem solid #d4593d;
-  background: #f3daa3;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  margin-bottom: 4rem;
+}
+.content::before {
+  border-top-left-radius: 17rem;
+  border-bottom-left-radius: 17rem;
+  background-size: cover;
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+.contentBox::before {
+  border-top-left-radius: 17rem;
+  border-bottom-left-radius: 17rem;
+  background: url("/img/treesSunset.jpg");
+  background-size: cover;
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
 }
 .sect {
+  opacity: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -217,12 +270,4 @@ body {
   width: 50%;
   border-top-left-radius: 5rem;
   box-shadow: 0 -10px 10px #845259;
-}
-.cpyrt {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  color: white;
-  height: 2rem;
-  border: 2px solid pink;
 }

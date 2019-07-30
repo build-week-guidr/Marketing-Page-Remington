@@ -1,3 +1,23 @@
+.backImg{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    
+}
+.backImg::before{
+    background-image: url("/img/Anchorage-Chugach-State-Park-Topo-Map.jpg");
+    background-size: cover;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -3;
+    opacity: .8;
+
+}
 .content{
     width: 95%;
     float: right;
@@ -6,11 +26,44 @@
     border-top: .2rem solid @medium-vermillion;
     border-left: .2rem solid @medium-vermillion;
     border-bottom: .2rem solid @medium-vermillion;
-    background: @tuscan;
-    .custom(center, center);
+    .center();
     flex-direction: column;
+    position: relative;
+    margin-bottom: 4rem;
+}
+.content::before{
+    border-top-left-radius: 17rem;
+    border-bottom-left-radius: 17rem;
+   
+    background-size: cover;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    
+}
+.contentBox::before{
+    border-top-left-radius: 17rem;
+    border-bottom-left-radius: 17rem;
+    background:  url("/img/treesSunset.jpg");
+    background-size: cover;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+  
 }
 .sect{
+    opacity: 1;
     .custom(flex-end, center);
     .copy{
         color: @steel-blue;
@@ -44,10 +97,4 @@
         border-top-left-radius: 5rem;
         box-shadow: 0 -10px 10px @deep-ruby;
     }
-}
-.cpyrt{
-    .custom(flex-end, center);
-    color: white;
-    height: 2rem;
-    .findMe();
 }
