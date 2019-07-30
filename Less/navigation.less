@@ -1,3 +1,23 @@
 .headBox{
-    .center();
+    .custom(space-between, center);
+    .navBox{
+        .custom(space-between, center);
+        align-self: flex-start;
+        a{
+            padding: 2rem 3rem 0 3rem;
+            text-decoration: none;
+            font-weight: bolder;
+            font: 3.5rem @cinzel;
+            color: @steel-blue;
+            text-shadow: 
+            -1px -1px 2px @oxford-blue,
+            1px -1px 2px @oxford-blue,
+            -1px 1px 2px @oxford-blue,
+            1px 1px 2px @oxford-blue;
+        }
+    }
+    .logo{
+        width: 20%;
+        padding: 0 0 0 3rem;
+    }
 }

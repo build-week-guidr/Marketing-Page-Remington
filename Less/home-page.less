@@ -1,4 +1,53 @@
-body{
-    background-image: url("/img/Anchorage-Chugach-State-Park-Topo-Map.jpg");
+.content{
+    width: 95%;
+    float: right;
+    border-top-left-radius: 17rem;
+    border-bottom-left-radius: 17rem;
+    border-top: .2rem solid @medium-vermillion;
+    border-left: .2rem solid @medium-vermillion;
+    border-bottom: .2rem solid @medium-vermillion;
+    background: @tuscan;
+    .custom(center, center);
+    flex-direction: column;
 }
-
+.sect{
+    .custom(flex-end, center);
+    .copy{
+        color: @steel-blue;
+        text-shadow:1px 1px 0 @oxford-blue;
+        width: 48%;
+        .center();
+        flex-direction: column;
+        h2{
+            font-family: @cinzel;
+            font-size: 3rem;
+        }
+        p{
+            font-family: @lato;
+            font-size: 2rem;
+        }
+    }
+    .sM{
+        width: 50%;
+        border-bottom-left-radius: 5rem;
+        box-shadow: 10px 10px 10px @deep-ruby;
+    }
+    .iS{
+        width: 50%;
+        margin-right: 3rem;
+        border-top-right-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+        box-shadow: 10px 0 10px @deep-ruby;
+    }
+    .sF{
+        width: 50%;
+        border-top-left-radius: 5rem;
+        box-shadow: 0 -10px 10px @deep-ruby;
+    }
+}
+.cpyrt{
+    .custom(flex-end, center);
+    color: white;
+    height: 2rem;
+    .findMe();
+}

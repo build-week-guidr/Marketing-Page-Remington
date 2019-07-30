@@ -128,12 +128,101 @@ table {
 }
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.headBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
 }
 body {
   background-image: url("/img/Anchorage-Chugach-State-Park-Topo-Map.jpg");
+}
+.headBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headBox .navBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-start;
+}
+.headBox .navBox a {
+  padding: 2rem 3rem 0 3rem;
+  text-decoration: none;
+  font-weight: bolder;
+  font: 3.5rem 'Cinzel', serif;
+  color: #2d86ae;
+  text-shadow: -1px -1px 2px #002341, 1px -1px 2px #002341, -1px 1px 2px #002341, 1px 1px 2px #002341;
+}
+.headBox .logo {
+  width: 20%;
+  padding: 0 0 0 3rem;
+}
+.content {
+  width: 95%;
+  float: right;
+  border-top-left-radius: 17rem;
+  border-bottom-left-radius: 17rem;
+  border-top: 0.2rem solid #d4593d;
+  border-left: 0.2rem solid #d4593d;
+  border-bottom: 0.2rem solid #d4593d;
+  background: #f3daa3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sect {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.sect .copy {
+  color: #2d86ae;
+  text-shadow: 1px 1px 0 #002341;
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sect .copy h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+}
+.sect .copy p {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+}
+.sect .sM {
+  width: 50%;
+  border-bottom-left-radius: 5rem;
+  box-shadow: 10px 10px 10px #845259;
+}
+.sect .iS {
+  width: 50%;
+  margin-right: 3rem;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  box-shadow: 10px 0 10px #845259;
+}
+.sect .sF {
+  width: 50%;
+  border-top-left-radius: 5rem;
+  box-shadow: 0 -10px 10px #845259;
+}
+.cpyrt {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  height: 2rem;
+  border: 2px solid pink;
 }
