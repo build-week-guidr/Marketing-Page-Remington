@@ -25,6 +25,13 @@
     position: relative;
     margin-bottom: 2rem;
 }
+@media @mobile{
+    .content{
+        width: 99%;
+        border-top-left-radius: 7rem;
+        border-bottom-left-radius: 7rem;
+    }
+}
 .content::before{
     border-top-left-radius: 17rem;
     border-bottom-left-radius: 17rem;
@@ -38,6 +45,12 @@
     height: 100%;
     width: 100%;
     z-index: -2;
+}
+@media @mobile{
+   .content::before{
+    border-top-left-radius: 7rem;
+    border-bottom-left-radius: 7rem;
+   }
 }
 .contentBox::before{
     border-top-left-radius: 17rem;
@@ -54,11 +67,20 @@
     z-index: -1;
     opacity: .5;
 }
+@media @mobile{
+    .contentBox::before{
+    border-top-left-radius: 7rem;
+    border-bottom-left-radius: 7rem;
+    }
+}
 .sect{
-    .custom(flex-end, center);
+    .center();
     .copy{
         color: @steel-blue;
-        text-shadow:1px 1px 0 @oxford-blue, 2px 2px 3px white;
+        text-shadow: 1px 1px 0 @oxford-blue, -.5px -.5px 2px white,
+        .5px -.5px 2px white,
+        -.5px .5px 2px white,
+        .5px .5px 2px white;
         width: 48%;
         .center();
         flex-direction: column;
@@ -88,5 +110,51 @@
         width: 50%;
         border-top-left-radius: 5rem;
         box-shadow: 0 -10px 10px @deep-ruby;
+    }
+}
+@media @mobile{
+    .sect{
+        display: flex;
+        flex-direction: column;
+        .copy{
+            width: 95%;
+            .center();
+            // text-align: center;
+            margin: 1rem;
+        }
+        .sM{
+            width: 90%;
+            border-top-left-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+            box-shadow: 0 10px 10px @deep-ruby;
+            margin: 1rem;
+        }
+        .iS{
+            width: 90%;
+            border-top-left-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            box-shadow: 0 10px 10px @deep-ruby;
+            margin: 1rem;
+        }
+        .sF{
+            display: none;
+        }
+    }
+    .purpose{
+        display: flex;
+        flex-direction: column-reverse;
+        .copy{
+            margin-right: 2rem;
+            text-align: center;
+        }
+    }
+    .outdoorResume{
+        .copy{
+            margin: 0 2rem 2rem 0;
+
+            text-align: center;
+        }
     }
 }
