@@ -14,7 +14,7 @@
 }
 .content{
     width: 95%;
-    float: right;
+    margin-left: 5%;
     border-top-left-radius: 17rem;
     border-bottom-left-radius: 17rem;
     border-top: .2rem solid @medium-vermillion;
@@ -23,7 +23,7 @@
     .center();
     flex-direction: column;
     position: relative;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 .content::before{
     border-top-left-radius: 17rem;
@@ -55,17 +55,17 @@
     opacity: .5;
 }
 .sect{
-    opacity: 1;
     .custom(flex-end, center);
     .copy{
         color: @steel-blue;
-        text-shadow:1px 1px 0 @oxford-blue;
+        text-shadow:1px 1px 0 @oxford-blue, 2px 2px 3px white;
         width: 48%;
         .center();
         flex-direction: column;
         h2{
             font-family: @cinzel;
             font-size: 3rem;
+            margin-bottom: 1rem;
         }
         p{
             font-family: @lato;
