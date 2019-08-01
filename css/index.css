@@ -178,7 +178,7 @@ html {
   }
   .headBox .navBox {
     align-self: center;
-    width: 65%;
+    width: 80%;
     padding: 0;
   }
   .headBox .navBox a {
@@ -323,6 +323,7 @@ html {
   font-weight: 800;
   box-shadow: 1px 1px 0 #002341, -0.5px -0.5px 2px white, 0.5px -0.5px 2px white, -0.5px 0.5px 2px white, 0.5px 0.5px 2px white;
   text-shadow: 1px 1px 0 #002341, -0.5px -0.5px 2px white, 0.5px -0.5px 2px white, -0.5px 0.5px 2px white, 0.5px 0.5px 2px white;
+  text-decoration: none;
 }
 .sect .copy .btnBox {
   display: flex;
