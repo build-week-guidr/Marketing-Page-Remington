@@ -158,11 +158,20 @@ html {
   color: #2d86ae;
   text-shadow: -0.5px -0.5px 1px #002341, 0.5px -0.5px 1px #002341, -0.5px 0.5px 1px #002341, 0.5px 0.5px 1px #002341;
 }
+.headBox .navBox a:hover {
+  font-size: 4rem;
+}
 .headBox .logo {
   width: 25%;
 }
+.headBox .logo:hover {
+  width: 30%;
+}
 .headBox .logoImg {
   width: 15%;
+}
+.headBox .logoImg:hover {
+  width: 20%;
 }
 .headBox .logoBox {
   display: flex;
@@ -324,6 +333,11 @@ html {
   box-shadow: 1px 1px 0 #002341, -0.5px -0.5px 2px white, 0.5px -0.5px 2px white, -0.5px 0.5px 2px white, 0.5px 0.5px 2px white;
   text-shadow: 1px 1px 0 #002341, -0.5px -0.5px 2px white, 0.5px -0.5px 2px white, -0.5px 0.5px 2px white, 0.5px 0.5px 2px white;
   text-decoration: none;
+}
+.sect .copy .btn:hover {
+  height: 7rem;
+  width: 19rem;
+  font-size: 4rem;
 }
 .sect .copy .btnBox {
   display: flex;
