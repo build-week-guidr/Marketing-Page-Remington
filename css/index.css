@@ -204,7 +204,7 @@ html {
   align-items: center;
   margin-bottom: 1rem;
   color: #2d86ae;
-  text-shadow: 1px 1px 0 #002341;
+  text-shadow: 1px 1px 0 #002341, -0.5px -0.5px 2px white, 0.5px -0.5px 2px white, -0.5px 0.5px 2px white, 0.5px 0.5px 2px white;
   font-size: 2rem;
 }
 .backImg {
@@ -284,8 +284,7 @@ html {
 }
 .sect {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 .sect .copy {
   color: #2d86ae;
@@ -294,21 +293,48 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 4rem;
   flex-direction: column;
 }
 .sect .copy h2 {
   font-family: 'Cinzel', serif;
-  font-size: 3rem;
+  font-size: 2.85rem;
   margin-bottom: 1rem;
 }
 .sect .copy p {
   font-family: 'Lato', sans-serif;
   font-size: 2rem;
+  margin: 1rem;
+}
+.sect .copy .btn {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 6rem;
+  width: 18rem;
+  background-color: transparent;
+  color: #2d86ae;
+  font-size: 3rem;
+  border: 2px solid #2d86ae;
+  border-radius: 2rem;
+  font-family: 'Cinzel', serif;
+  font-weight: 800;
+  box-shadow: 1px 1px 0 #002341, -0.5px -0.5px 2px white, 0.5px -0.5px 2px white, -0.5px 0.5px 2px white, 0.5px 0.5px 2px white;
+  text-shadow: 1px 1px 0 #002341, -0.5px -0.5px 2px white, 0.5px -0.5px 2px white, -0.5px 0.5px 2px white, 0.5px 0.5px 2px white;
+}
+.sect .copy .btnBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
 }
 .sect .sM {
   width: 50%;
   border-bottom-left-radius: 5rem;
-  box-shadow: 10px 10px 10px #845259;
+  box-shadow: 0 10px 10px #845259;
+  margin-right: 0;
 }
 .sect .iS {
   width: 50%;
@@ -321,25 +347,27 @@ html {
   width: 50%;
   border-top-left-radius: 5rem;
   box-shadow: 0 -10px 10px #845259;
+  margin-right: 0;
 }
 @media (max-width: 500px) {
   .sect {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
   }
   .sect .copy {
     width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
+    margin: 1rem 3.5rem 1rem 1rem;
   }
   .sect .sM {
     width: 90%;
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
-    box-shadow: 0 10px 10px #845259;
-    margin: 1rem;
+    box-shadow: -10px 10px 10px #845259;
+    margin: 1rem 0 1rem;
   }
   .sect .iS {
     width: 90%;
@@ -347,8 +375,8 @@ html {
     border-bottom-left-radius: 2rem;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    box-shadow: 0 10px 10px #845259;
-    margin: 1rem;
+    box-shadow: -10px 10px 10px #845259;
+    margin: 1rem 0 1rem;
   }
   .sect .sF {
     display: none;
@@ -358,7 +386,6 @@ html {
     flex-direction: column-reverse;
   }
   .purpose .copy {
-    margin-right: 2rem;
     text-align: center;
   }
   .outdoorResume .copy {

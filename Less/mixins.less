@@ -14,16 +14,17 @@
     align-items: @align;
 }
 
-.btnmaker(@height, @width, @color, @text, @size, @px, @type, @border, @radius, @weight){
+.btnmaker(@height, @width, @bgcolor, @textC, @size, @px, @type, @borderC, @radius, @font, @weight){
     .center();
     cursor: pointer;
     height: @height;
     width: @width;
-    background-color: @color;
-    color: @text;
+    background-color: @bgcolor;
+    color: @textC;
     font-size: @size;
-    border: @px @type @border;
+    border: @px @type @borderC;
     border-radius: @radius;
+    font-family: @font;
     font-weight: @weight;
 }
 
