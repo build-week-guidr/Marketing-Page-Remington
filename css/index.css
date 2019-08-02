@@ -158,20 +158,11 @@ html {
   color: #2d86ae;
   text-shadow: -0.5px -0.5px 1px #002341, 0.5px -0.5px 1px #002341, -0.5px 0.5px 1px #002341, 0.5px 0.5px 1px #002341;
 }
-.headBox .navBox a:hover {
-  font-size: 4rem;
-}
 .headBox .logo {
   width: 25%;
 }
-.headBox .logo:hover {
-  width: 30%;
-}
 .headBox .logoImg {
   width: 15%;
-}
-.headBox .logoImg:hover {
-  width: 20%;
 }
 .headBox .logoBox {
   display: flex;
@@ -182,40 +173,22 @@ html {
   .headBox .navBox a {
     font-size: 2.5rem;
   }
-  .headBox .navBox a:hover {
-    font-size: 3rem;
-  }
   .headBox .logo {
     width: 40%;
   }
-  .headBox .logo:hover {
-    width: 45%;
-  }
   .headBox .logoImg {
     width: 20%;
-  }
-  .headBox .logoImg:hover {
-    width: 25%;
   }
 }
 @media (max-width: 800px) {
   .headBox .navBox a {
     font-size: 2.5rem;
   }
-  .headBox .navBox a:hover {
-    font-size: 3rem;
-  }
   .headBox .logo {
     width: 55%;
   }
-  .headBox .logo:hover {
-    width: 65%;
-  }
   .headBox .logoImg {
     width: 95%;
-  }
-  .headBox .logoImg:hover {
-    width: 100%;
   }
 }
 @media (max-width: 500px) {
@@ -379,11 +352,6 @@ html {
   box-shadow: 1px 1px 0 #002341, -0.5px -0.5px 2px white, 0.5px -0.5px 2px white, -0.5px 0.5px 2px white, 0.5px 0.5px 2px white;
   text-shadow: 1px 1px 0 #002341, -0.5px -0.5px 2px white, 0.5px -0.5px 2px white, -0.5px 0.5px 2px white, 0.5px 0.5px 2px white;
   text-decoration: none;
-}
-.sect .copy .btn:hover {
-  height: 7rem;
-  width: 19rem;
-  font-size: 4rem;
 }
 .sect .copy .btnBox {
   display: flex;
