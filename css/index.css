@@ -494,13 +494,24 @@ html {
 }
 .about {
   margin: 1rem;
+  text-align: center;
 }
 .about .copy a {
   text-decoration: none;
   font: 2rem 'Lato', sans-serif;
 }
+.about .copy h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 .about img {
   height: 200px;
   width: 200px;
   object-fit: contain;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
