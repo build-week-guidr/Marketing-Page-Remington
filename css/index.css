@@ -178,6 +178,46 @@ html {
   justify-content: flex-start;
   align-items: center;
 }
+@media (max-width: 1150px) {
+  .headBox .navBox a {
+    font-size: 2.5rem;
+  }
+  .headBox .navBox a:hover {
+    font-size: 3rem;
+  }
+  .headBox .logo {
+    width: 40%;
+  }
+  .headBox .logo:hover {
+    width: 45%;
+  }
+  .headBox .logoImg {
+    width: 20%;
+  }
+  .headBox .logoImg:hover {
+    width: 25%;
+  }
+}
+@media (max-width: 800px) {
+  .headBox .navBox a {
+    font-size: 2.5rem;
+  }
+  .headBox .navBox a:hover {
+    font-size: 3rem;
+  }
+  .headBox .logo {
+    width: 55%;
+  }
+  .headBox .logo:hover {
+    width: 65%;
+  }
+  .headBox .logoImg {
+    width: 95%;
+  }
+  .headBox .logoImg:hover {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .headBox {
     display: flex;
@@ -187,7 +227,7 @@ html {
   }
   .headBox .navBox {
     align-self: center;
-    width: 80%;
+    width: 70%;
     padding: 0;
   }
   .headBox .navBox a {
@@ -205,6 +245,11 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  .headBox .navBox {
+    width: 80%;
   }
 }
 .cpyrt {
@@ -304,6 +349,7 @@ html {
   align-items: center;
   padding-left: 4rem;
   flex-direction: column;
+  text-align: center;
 }
 .sect .copy h2 {
   font-family: 'Cinzel', serif;
@@ -350,6 +396,7 @@ html {
   border-bottom-left-radius: 5rem;
   box-shadow: 0 10px 10px #845259;
   margin-right: 0;
+  object-fit: cover;
 }
 .sect .iS {
   width: 50%;
@@ -357,12 +404,49 @@ html {
   border-top-right-radius: 5rem;
   border-bottom-right-radius: 5rem;
   box-shadow: 10px 0 10px #845259;
+  object-fit: cover;
 }
 .sect .sF {
   width: 50%;
   border-top-left-radius: 5rem;
   box-shadow: 0 -10px 10px #845259;
   margin-right: 0;
+  object-fit: cover;
+}
+@media (max-width: 1150px) {
+  .sect {
+    justify-content: flex-end;
+  }
+  .sect .copy {
+    margin: 1rem;
+  }
+  .sect .sM {
+    width: 40%;
+  }
+  .sect .iS {
+    width: 40%;
+    margin-right: 10%;
+  }
+  .sect .sF {
+    width: 40%;
+  }
+}
+@media (max-width: 800px) {
+  .sect {
+    justify-content: flex-end;
+  }
+  .sect .copy {
+    margin: 3rem;
+  }
+  .sect .sM {
+    width: 45%;
+  }
+  .sect .iS {
+    width: 60%;
+  }
+  .sect .sF {
+    width: 45%;
+  }
 }
 @media (max-width: 500px) {
   .sect {
@@ -407,4 +491,16 @@ html {
     margin: 0 2rem 2rem 0;
     text-align: center;
   }
+}
+.sect {
+  margin: 1rem;
+}
+.sect .copy a {
+  text-decoration: none;
+  font: 2rem 'Lato', sans-serif;
+}
+.sect img {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
 }

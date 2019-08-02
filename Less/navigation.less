@@ -35,13 +35,61 @@
         .custom(flex-start, center);
     }
 }
+@media(max-width: 1150px){
+    .headBox{
+        .navBox{
+            a{
+                font-size: 2.5rem;
+            }
+            a:hover{
+                font-size: 3rem;
+            }
+        }
+        .logo{
+            width: 40%;
+        }
+        .logo:hover{
+            width: 45%;
+        }
+        .logoImg{
+            width: 20%;
+        }
+        .logoImg:hover{
+            width: 25%;
+        }
+    }
+}
+@media @tablet{
+    .headBox{
+        .navBox{
+            a{
+                font-size: 2.5rem;
+            }
+            a:hover{
+                font-size: 3rem;
+            }
+        }
+        .logo{
+            width: 55%;
+        }
+        .logo:hover{
+            width: 65%;
+        }
+        .logoImg{
+            width: 95%;
+        }
+        .logoImg:hover{
+            width: 100%;
+        }
+    }
+}
 @media @mobile{
     .headBox{
         .center();
         flex-direction: column;
         .navBox{
             align-self: center;
-            width: 80%;
+            width: 70%;
             padding: 0;
             a{
                 font-size: 2rem;
@@ -57,6 +105,13 @@
         }
         .logoBox{
             .center();
+        }
+    }
+}
+@media @smallmobile{
+    .headBox{
+        .navBox{
+            width: 80%;
         }
     }
 }

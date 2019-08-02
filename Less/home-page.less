@@ -90,6 +90,7 @@
         .center();
         padding-left: 4rem;
         flex-direction: column;
+        text-align: center;
         h2{
             font-family: @cinzel;
             font-size: 2.85rem;
@@ -131,6 +132,7 @@
         border-bottom-left-radius: 5rem;
         box-shadow: 0 10px 10px @deep-ruby;
         margin-right: 0;
+        object-fit: cover;
     }
     .iS{
         width: 50%;
@@ -138,12 +140,49 @@
         border-top-right-radius: 5rem;
         border-bottom-right-radius: 5rem;
         box-shadow: 10px 0 10px @deep-ruby;
+        object-fit: cover;
     }
     .sF{
         width: 50%;
         border-top-left-radius: 5rem;
         box-shadow: 0 -10px 10px @deep-ruby;
         margin-right: 0;
+        object-fit: cover;
+    }
+}
+@media @smalldesk{
+    .sect{
+        justify-content: flex-end;
+        .copy{
+            margin: 1rem;
+        }
+        .sM{
+            width: 40%;
+        }
+        .iS{
+            width: 40%;
+            margin-right: 10%;
+        }
+        .sF{
+            width: 40%;
+        }
+    }
+}
+@media @tablet{
+    .sect{
+        justify-content: flex-end;
+        .copy{
+           margin: 3rem;
+        }
+        .sM{
+            width: 45%;
+        }
+        .iS{
+            width: 60%;
+        }
+        .sF{
+            width: 45%;
+        }
     }
 }
 @media @mobile{
