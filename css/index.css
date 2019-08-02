@@ -492,14 +492,14 @@ html {
     text-align: center;
   }
 }
-.sect {
+.about {
   margin: 1rem;
 }
-.sect .copy a {
+.about .copy a {
   text-decoration: none;
   font: 2rem 'Lato', sans-serif;
 }
-.sect img {
+.about img {
   height: 200px;
   width: 200px;
   object-fit: contain;
